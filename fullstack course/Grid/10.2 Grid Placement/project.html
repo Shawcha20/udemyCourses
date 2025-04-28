@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            height:100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr .2fr;
+            grid-template-rows:1fr 1fr .1fr;
+        
+        }
+        .card{
+            border:5px solid black;
+        }
+        .red{
+            grid-area: 1/1/2/2;
+            background-color: red;
+        }
+        .
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card red "></div>
+        <div class="card blue"></div>
+        <div class="card yellow"></div>
+        <div class="card black"></div>
+
+    </div>
+</body>
+</html>

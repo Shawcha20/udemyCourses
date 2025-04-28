@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .design{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+   
+    }
+
+    .grid-container{
+      display: grid;
+      height:50rem;
+      width:50rem;
+     grid-template-columns:1fr .5fr .5fr .1fr;  /* 1 1 2 .5 3 .5 4 .1 5 */
+      grid-template-rows:1fr .25fr .4fr .1fr;
+    }
+    .card{
+      border:4px solid black;
+    }
+    .red{
+        background-color: #E72F24;
+        grid-area:1/1/2/2;
+    }
+    .white
+    {
+      background-color: #F0F1EC;
+    }
+    .first{
+      grid-area:1/2/2/5;
+    }
+    .second{
+      grid-area:2/1/4/2;
+    }
+    .third{
+      grid-area:2/2/4/4;
+    }
+    .blue{
+      background-color: blue;
+    }
+   
+    .yellow{
+      background-color: yellow;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .fifth{
+      grid-area:3/4/5/5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="design">
+   <div class="grid-container">
+    <div class="card red"></div>    
+    <div class="card white first"></div>
+    <div class="card white second"></div>
+    <div class="card white third"></div>
+    <div class="card blue"></div>
+    <div class="card white fourth"></div>
+    <div class="card white fifth"></div>
+    <div class="card yellow"></div>
+    <div class="card black"></div>
+    
+   </div>
+  </div>
+</body>
+
+</html>

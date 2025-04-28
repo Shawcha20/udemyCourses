@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        max-height: 100vh;
+        margin:5px;
+        max-width:100%;
+       }
+       .logo{
+        width:200px;
+       }
+       .heading{
+        color:red;
+        font-size:30px;
+        font-weight: 600px;
+        font-family: Arial;
+        margin:1rem;
+       }
+       .creative{
+        color:blue;
+       }
+       .container{
+        display:flex;
+        justify-content: space-between;
+       }
+       .left{
+        flex:left;
+       }
+       .right{
+        flex:right;
+       }
+       .cardImage{
+        width: 300px;
+        height: 300px;
+       }
+       .card{
+        display:flex;
+       }
+       .title{
+        font-size:20px;
+        font-weight: 600;
+        padding: 5px;
+        text-align: center;
+       }
+       footer{
+        text-align: right;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+    <div class="heading">
+        <p>We are a <span class="creative">Creative</span></p>
+        <p>Design Agency</p>
+    </div>
+    <div class="container">
+        <div class="card left">
+            <img class="cardImage" src="./assets/images/beautiful.jpg" alt="">
+
+            <div>
+                <p class="title">Beauty</p>
+                <p>We Strive to create beautiful websites on the web</p>
+            </div>
+        </div>
+        <div class="right card">
+            <img class="cardImage" src="./assets/images/construction.jpg" alt="">
+            <div>
+                <p class="title">Construction</p>
+                <p>Built by our team of professional dvelopers, we ensure the most rigour and moder website. Built from scrath using thml and css only</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        this is my website
+    </footer>
+</body>
+
+</html>
